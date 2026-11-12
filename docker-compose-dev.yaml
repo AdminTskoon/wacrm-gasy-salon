@@ -1,9 +1,9 @@
 services:
-  wacrm:
+  wacrm-gasy-salon:
     image: node:lts
-    container_name: wacrm
+    container_name: wacrm-gasy-salon
     ports:
-      - "${WACRM_PORT}:3000"
+      - "${HOST_PORT}:3000"
     volumes:
       - .:/app
     working_dir: /app
